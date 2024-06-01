@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo1 img {
+    width:60px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.logo:hover {
+    color: #fdcc04;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+     padding: 0 1.5rem;
+}
+
+nav a:hover {
+    color: #fdcc04;
+}
+
+.myself {
+    background-image: url(web-dev.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.myself-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+
+.column-left li {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 0;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #383733;
+    background: #fdcc04;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .myself-container {
+        grid-template-columns: 1fr;
+    }
+}
